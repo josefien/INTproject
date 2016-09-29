@@ -22,12 +22,23 @@ public class ProjectINT {
     /**
      * @param args the command line arguments
      */
+    private static ArrayList fairytales;
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\josephine\\MyFile.txt ");
-        ArrayList<String> text = ImportFile(file);
-        for (String t : text) {
-            System.out.println(t);
+        fairytales = new ArrayList();
+        File folder = new File("C:\\Users\\josephine\\ProjectINT\\");
+        File[] listOfFiles = folder.listFiles();
+
+        for (File file : listOfFiles) {
+            if (file.isFile()) {
+                ArrayList<String> text = ImportFile(file);
+                for (String t : text) {
+                    System.out.println(t);
+                }
+                fairytales.add(text);
+            }
         }
+        
+        
     }
     
     public static ArrayList<String> ImportFile (File file) {
