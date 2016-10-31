@@ -120,7 +120,7 @@ public class ProjectINT {
                         seddone = true;
                     }     
                 }    
-            } else {
+            } else { 
                 teddone = true;
             }
         }
