@@ -43,26 +43,29 @@ public class ProjectINT {
 
         File f = new File("C:\\Users\\josephine\\ProjectINT\\lexicon.txt");
         if (f.isFile()) {
+
             ArrayList<String> text = ImportFile(f);
-            int counter = 0;
-            int[] values = new int[10];
-            for (String t : text) {
+            
+                int counter = 0;
+                int[] values = new int[10];
+                for (String t : text) {
 
-                String[] regel = t.split("\\t");
-                if (!words.containsKey(regel[0])) {
-                    //System.out.println("print"+regel[0]);
-                    values = new int[10];
-                    values[0] = Integer.parseInt(regel[2]);
-                    words.put(regel[0], values);
-                    counter = 1;
-                } else {
-                    values[counter] = Integer.parseInt(regel[2]);
-                    words.put(regel[0], values);
-                    counter++;
+                    String[] regel = t.split("\\t");
+                    if (!words.containsKey(regel[0])) {
+                        //System.out.println("print"+regel[0]);
+                        values = new int[10];
+                        values[0] = Integer.parseInt(regel[2]);
+                        words.put(regel[0], values);
+                        counter = 1;
+                    } else {
+                        values[counter] = Integer.parseInt(regel[2]);
+                        words.put(regel[0], values);
+                        counter++;
 
+                    }
                 }
 
-            }
+            
 
         }
 
@@ -75,6 +78,7 @@ public class ProjectINT {
 
             if (file.isFile()) {
                 ArrayList<String> text = ImportFile(file);
+                if (text != null) {
                 fairytales.add(text);
                 textid++;
                 int sentenceid = 0;
@@ -94,6 +98,10 @@ public class ProjectINT {
 
                 }
                 ted.put(textid, sed);
+                } else {
+                
+                System.out.println("Story had not enough sentences");
+            }
             }
         }
 
@@ -183,16 +191,22 @@ public class ProjectINT {
 
             // dis.available() returns 0 if the file does not have more lines.
             String story = "";
+            int amountofsen = 0;
             while (dis.available() != 0) {
 
                 // this statement reads the line from the file and print it to
                 // the console.
                 String[] sentences = dis.readLine().split("\\.");
+
                 for (String sentence : sentences) {
                     text.add(sentence);
+                    amountofsen++;
                     //System.out.println(sentence + "+:");
                 }
 
+            }
+            if (amountofsen < 30) {
+                return null;
             }
             /* for(String sentence : story.split("\\.")) {
           text.add(sentence);
