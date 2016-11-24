@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package projectint;
 
 import java.io.BufferedInputStream;
@@ -13,7 +8,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.sql.*;
-
 import java.util.HashMap;
 
 /**
@@ -22,12 +16,10 @@ import java.util.HashMap;
  */
 public class ProjectINT {
 
-    /**
-     * @param args the command line arguments
-     */
     private static ArrayList fairytales;
-    //Word - anger/anticipation/disgust/fear/joy/negative/positive/sadness/surprise/trust
+    //Hashmap of EmoLex: Word - anger/anticipation/disgust/fear/joy/negative/positive/sadness/surprise/trust
     private static HashMap<String, int[]> words;
+    //Hashmap of the Text Emotion Database
     private static HashMap<Integer, HashMap<Integer, float[]>> ted;
 
     // JDBC driver name and database URL
@@ -41,34 +33,34 @@ public class ProjectINT {
     public static void main(String[] args) {
         words = new HashMap<String, int[]>();
 
+        //Fill up HashMap words with the EmoLex
         File f = new File("C:\\Users\\josephine\\ProjectINT\\lexicon.txt");
         if (f.isFile()) {
 
             ArrayList<String> text = ImportFile(f);
-            
-                int counter = 0;
-                int[] values = new int[10];
-                for (String t : text) {
 
-                    String[] regel = t.split("\\t");
-                    if (!words.containsKey(regel[0])) {
-                        //System.out.println("print"+regel[0]);
-                        values = new int[10];
-                        values[0] = Integer.parseInt(regel[2]);
-                        words.put(regel[0], values);
-                        counter = 1;
-                    } else {
-                        values[counter] = Integer.parseInt(regel[2]);
-                        words.put(regel[0], values);
-                        counter++;
+            int counter = 0;
+            int[] values = new int[10];
+            for (String t : text) {
 
-                    }
+                String[] regel = t.split("\\t");
+                if (!words.containsKey(regel[0])) {
+                    //System.out.println("print"+regel[0]);
+                    values = new int[10];
+                    values[0] = Integer.parseInt(regel[2]);
+                    words.put(regel[0], values);
+                    counter = 1;
+                } else {
+                    values[counter] = Integer.parseInt(regel[2]);
+                    words.put(regel[0], values);
+                    counter++;
+
                 }
-
-            
+            }
 
         }
 
+        //Fill up ArrayList fairytales with all the fairytales and fill up the Text Emotion Database and hashmap with the values of the sentences of these fairytales
         fairytales = new ArrayList();
         ted = new HashMap<Integer, HashMap<Integer, float[]>>();
         File folder = new File("C:\\Users\\josephine\\ProjectINT\\Stories\\");
@@ -79,36 +71,35 @@ public class ProjectINT {
             if (file.isFile()) {
                 ArrayList<String> text = ImportFile(file);
                 if (text != null) {
-                fairytales.add(text);
-                textid++;
-                int sentenceid = 0;
-                HashMap sed = new HashMap<Integer, float[]>();
-                for (String sentence : text) {
+                    fairytales.add(text);
+                    textid++;
+                    int sentenceid = 0;
+                    HashMap sed = new HashMap<Integer, float[]>();
+                    for (String sentence : text) {
 
-                    if (!sentence.replace("'", "").replace(",", "").replace(" ", "").replace("-", "").isEmpty()) {
-                        sentenceid++;
+                        if (!sentence.replace("'", "").replace(",", "").replace(" ", "").replace("-", "").isEmpty()) {
+                            sentenceid++;
 // System.out.println("Sentence: " + sentence);
-                        float[] results = readEmotions(sentence.replace(",", "").replace("'", "").replace("-", ""));
-                        writetoDB(textid, sentenceid, results[0], results[1], results[2], results[3], results[4], results[5], results[6], results[7], results[8], results[9]);
-                        System.out.println(sentence);
+                            float[] results = readEmotions(sentence.replace(",", "").replace("'", "").replace("-", ""));
+                            writetoTED(textid, sentenceid, results[0], results[1], results[2], results[3], results[4], results[5], results[6], results[7], results[8], results[9]);
+                            System.out.println(sentence);
 //float anger 0, float anticipation 1, float disgust 2, float fear 3, float joy 4, float negative 5, float positive 6, float sadness 7, float surprise 8, float trust 9
-                        //positive + ", " + negative + ", " + anger + ", " + anticipation + ", " + disgust + ", " + fear + ", " + joy + ", " + sadness + ", " + surprise + ", " + trust + ")";
-                        sed.put(sentenceid, new float[]{results[6], results[5], results[0], results[1], results[2], results[3], results[4], results[7], results[8], results[9]});
-                    }
+                            //positive + ", " + negative + ", " + anger + ", " + anticipation + ", " + disgust + ", " + fear + ", " + joy + ", " + sadness + ", " + surprise + ", " + trust + ")";
+                            sed.put(sentenceid, new float[]{results[6], results[5], results[0], results[1], results[2], results[3], results[4], results[7], results[8], results[9]});
+                        }
 
-                }
-                ted.put(textid, sed);
+                    }
+                    ted.put(textid, sed);
                 } else {
-                
-                System.out.println("Story had not enough sentences");
-            }
+                    System.out.println("Story had not enough sentences");
+                }
             }
         }
 
-        System.out.println("Appelsap");
-        boolean teddone = false;
+        //Fill up the Text Chunck Database
+        boolean tceddone = false;
         int textID = 0;
-        while (teddone == false) {
+        while (tceddone == false) {
             textID++;
             if (ted.containsKey(textID)) {
                 HashMap<Integer, float[]> sed = ted.get(textID);
@@ -167,15 +158,12 @@ public class ProjectINT {
                 float[] meanemo3 = new float[]{totalemo3[0] / size, totalemo3[1] / size, totalemo3[2] / size, totalemo3[3] / size, totalemo3[4] / size, totalemo3[5] / size, totalemo3[6] / size, totalemo3[7] / size, totalemo3[8] / size, totalemo3[9] / size};
                 writeToTCED(textID, emomax, meanemo, emomax1, meanemo1, emomax2, meanemo2, emomax3, meanemo3);
             } else {
-                teddone = true;
+                tceddone = true;
             }
         }
-
-        //for(float result :readEmotions("how the frog does talk")) {
-        //    System.out.print(result + ",");
-        //}
     }
 
+    //Import a file to text
     public static ArrayList<String> ImportFile(File file) {
 
         FileInputStream fis = null;
@@ -201,18 +189,14 @@ public class ProjectINT {
                 for (String sentence : sentences) {
                     text.add(sentence);
                     amountofsen++;
-                    //System.out.println(sentence + "+:");
                 }
 
             }
+            //We don't read in stories with less then 30 sentences
             if (amountofsen < 30) {
                 return null;
             }
-            /* for(String sentence : story.split("\\.")) {
-          text.add(sentence);
-      }*/
 
-            // dispose all the resources after using them.
             fis.close();
             bis.close();
             dis.close();
@@ -230,14 +214,12 @@ public class ProjectINT {
         float[] emonumber = new float[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
         int counter = 0;
         for (String word : wordsinsen) {
+            //Check if word is in the EmoLex
             if (words.containsKey(word.toLowerCase())) {
                 int[] emo = words.get(word.toLowerCase());
                 for (int i = 0; i < 10; i++) {
                     emonumber[i] += emo[i];
                 }
-                //System.out.print("In dic" + word);
-            } else {
-                //System.out.print("Not in dic" + word);
             }
             counter++;
         }
@@ -248,7 +230,8 @@ public class ProjectINT {
 
     }
 
-    public static boolean writetoDB(int textid, int sentenceid, float anger, float anticipation, float disgust, float fear, float joy, float negative, float positive, float sadness, float surprise, float trust) {
+    //Write to Text Emotion Database
+    public static boolean writetoTED(int textid, int sentenceid, float anger, float anticipation, float disgust, float fear, float joy, float negative, float positive, float sadness, float surprise, float trust) {
         Connection conn = null;
         Statement stmt = null;
         boolean succes = false;
@@ -295,11 +278,11 @@ public class ProjectINT {
                 return false;
             }//end finally try
         }//end try
-        System.out.println("Goodbye!");
 
         return succes;
     }
 
+    // Write to Text Chunk Emotion Database
     private static boolean writeToTCED(int textID, float emomax, float[] meanemo, float emomax1, float[] meanemo1, float emomax2, float[] meanemo2, float emomax3, float[] meanemo3) {
         boolean succes = false;
         Connection conn = null;
