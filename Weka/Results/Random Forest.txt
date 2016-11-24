@@ -1,0 +1,128 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1 -depth 5 -B
+Relation:     TCED-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    60
+Attributes:   85
+              emomax
+              emomin
+              meanang
+              meanant
+              meandis
+              meanfea
+              meanjoy
+              meansad
+              meansup
+              meantru
+              meanpos
+              meanneg
+              emomax1
+              emomin1
+              meanang1
+              meanant1
+              meandis1
+              meanfea1
+              meanjoy1
+              meansad1
+              meansup1
+              meantru1
+              meanpos1
+              meanneg1
+              emomax2
+              emomin2
+              meanang2
+              meanant2
+              meandis2
+              meanfea2
+              meanjoy2
+              meansad2
+              meansup2
+              meantru2
+              meanpos2
+              meanneg2
+              emomax3
+              emomin3
+              meanang3
+              meanant3
+              meandis3
+              meanfea3
+              meanjoy3
+              meansad3
+              meansup3
+              meantru3
+              meanpos3
+              meanneg3
+              emomax12
+              emomin12
+              meanang12
+              meanant12
+              meandis12
+              meanfea12
+              meanjoy12
+              meansad12
+              meansup12
+              meantru12
+              meanpos12
+              meanneg12
+              emomax13
+              emomin13
+              meanang13
+              meanant13
+              meandis13
+              meanfea13
+              meanjoy13
+              meansad13
+              meansup13
+              meantru13
+              meanpos13
+              meanneg13
+              emomax23
+              emomin23
+              meanang23
+              meanant23
+              meandis23
+              meanfea23
+              meanjoy23
+              meansad23
+              meansup23
+              meantru23
+              meanpos23
+              meanneg23
+              revised
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -depth 5 -B -do-not-check-capabilities
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          41               68.3333 %
+Incorrectly Classified Instances        19               31.6667 %
+Kappa statistic                          0.3667
+Mean absolute error                      0.4728
+Root mean squared error                  0.4918
+Relative absolute error                 94.5599 %
+Root relative squared error             98.3639 %
+Total Number of Instances               60     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.700    0.333    0.677      0.700    0.689      0.367    0.636     0.614     0
+                 0.667    0.300    0.690      0.667    0.678      0.367    0.636     0.603     1
+Weighted Avg.    0.683    0.317    0.684      0.683    0.683      0.367    0.636     0.609     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 21  9 |  a = 0
+ 10 20 |  b = 1
+

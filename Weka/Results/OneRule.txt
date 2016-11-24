@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.OneR -B 6
+Relation:     TCED-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    60
+Attributes:   85
+              emomax
+              emomin
+              meanang
+              meanant
+              meandis
+              meanfea
+              meanjoy
+              meansad
+              meansup
+              meantru
+              meanpos
+              meanneg
+              emomax1
+              emomin1
+              meanang1
+              meanant1
+              meandis1
+              meanfea1
+              meanjoy1
+              meansad1
+              meansup1
+              meantru1
+              meanpos1
+              meanneg1
+              emomax2
+              emomin2
+              meanang2
+              meanant2
+              meandis2
+              meanfea2
+              meanjoy2
+              meansad2
+              meansup2
+              meantru2
+              meanpos2
+              meanneg2
+              emomax3
+              emomin3
+              meanang3
+              meanant3
+              meandis3
+              meanfea3
+              meanjoy3
+              meansad3
+              meansup3
+              meantru3
+              meanpos3
+              meanneg3
+              emomax12
+              emomin12
+              meanang12
+              meanant12
+              meandis12
+              meanfea12
+              meanjoy12
+              meansad12
+              meansup12
+              meantru12
+              meanpos12
+              meanneg12
+              emomax13
+              emomin13
+              meanang13
+              meanant13
+              meandis13
+              meanfea13
+              meanjoy13
+              meansad13
+              meansup13
+              meantru13
+              meanpos13
+              meanneg13
+              emomax23
+              emomin23
+              meanang23
+              meanant23
+              meandis23
+              meanfea23
+              meanjoy23
+              meansad23
+              meansup23
+              meantru23
+              meanpos23
+              meanneg23
+              revised
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+meanant1:
+	< 0.00133531	-> 1
+	< 0.0022374	-> 0
+	< 0.003216385	-> 1
+	< 0.0058105	-> 0
+	< 0.0108909	-> 1
+	>= 0.0108909	-> 0
+(47/60 instances correct)
+
+
+Time taken to build model: 0.02 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          31               51.6667 %
+Incorrectly Classified Instances        29               48.3333 %
+Kappa statistic                          0.0333
+Mean absolute error                      0.4833
+Root mean squared error                  0.6952
+Relative absolute error                 96.6667 %
+Root relative squared error            139.0444 %
+Total Number of Instances               60     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.500    0.467    0.517      0.500    0.508      0.033    0.517     0.509     0
+                 0.533    0.500    0.516      0.533    0.525      0.033    0.517     0.509     1
+Weighted Avg.    0.517    0.483    0.517      0.517    0.517      0.033    0.517     0.509     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 15 15 |  a = 0
+ 14 16 |  b = 1
+

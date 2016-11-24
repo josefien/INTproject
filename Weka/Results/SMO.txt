@@ -1,0 +1,216 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 0.8 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4" -num-decimal-places 0
+Relation:     TCED-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    60
+Attributes:   85
+              emomax
+              emomin
+              meanang
+              meanant
+              meandis
+              meanfea
+              meanjoy
+              meansad
+              meansup
+              meantru
+              meanpos
+              meanneg
+              emomax1
+              emomin1
+              meanang1
+              meanant1
+              meandis1
+              meanfea1
+              meanjoy1
+              meansad1
+              meansup1
+              meantru1
+              meanpos1
+              meanneg1
+              emomax2
+              emomin2
+              meanang2
+              meanant2
+              meandis2
+              meanfea2
+              meanjoy2
+              meansad2
+              meansup2
+              meantru2
+              meanpos2
+              meanneg2
+              emomax3
+              emomin3
+              meanang3
+              meanant3
+              meandis3
+              meanfea3
+              meanjoy3
+              meansad3
+              meansup3
+              meantru3
+              meanpos3
+              meanneg3
+              emomax12
+              emomin12
+              meanang12
+              meanant12
+              meandis12
+              meanfea12
+              meanjoy12
+              meansad12
+              meansup12
+              meantru12
+              meanpos12
+              meanneg12
+              emomax13
+              emomin13
+              meanang13
+              meanant13
+              meandis13
+              meanfea13
+              meanjoy13
+              meansad13
+              meansup13
+              meantru13
+              meanpos13
+              meanneg13
+              emomax23
+              emomin23
+              meanang23
+              meanant23
+              meandis23
+              meanfea23
+              meanjoy23
+              meansad23
+              meansup23
+              meantru23
+              meanpos23
+              meanneg23
+              revised
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.3252 * (normalized) emomax
+ +      -0.5715 * (normalized) meanang
+ +      -0.1042 * (normalized) meanant
+ +      -0.4299 * (normalized) meandis
+ +       0.2195 * (normalized) meanfea
+ +       0.2377 * (normalized) meanjoy
+ +       0.2878 * (normalized) meansad
+ +      -0.2834 * (normalized) meansup
+ +       0.1921 * (normalized) meantru
+ +      -0.342  * (normalized) meanpos
+ +      -0.3065 * (normalized) meanneg
+ +       0.0951 * (normalized) emomax1
+ +      -0.2007 * (normalized) meanang1
+ +       0.6824 * (normalized) meanant1
+ +       0.2574 * (normalized) meandis1
+ +      -0.4583 * (normalized) meanfea1
+ +       0.0491 * (normalized) meanjoy1
+ +       0.3725 * (normalized) meansad1
+ +      -0.2516 * (normalized) meansup1
+ +       0.7413 * (normalized) meantru1
+ +      -1.2933 * (normalized) meanpos1
+ +      -0.4291 * (normalized) meanneg1
+ +      -0.0304 * (normalized) emomax2
+ +       0.084  * (normalized) meanang2
+ +       0.1695 * (normalized) meanant2
+ +       0.0612 * (normalized) meandis2
+ +      -0.3326 * (normalized) meanfea2
+ +       0.4537 * (normalized) meanjoy2
+ +       0.9923 * (normalized) meansad2
+ +      -0.9261 * (normalized) meansup2
+ +      -0.2231 * (normalized) meantru2
+ +      -0.42   * (normalized) meanpos2
+ +      -0.0383 * (normalized) meanneg2
+ +      -0.44   * (normalized) emomax3
+ +      -0.6735 * (normalized) meanang3
+ +       0.1145 * (normalized) meanant3
+ +      -0.4842 * (normalized) meandis3
+ +       0.0685 * (normalized) meanfea3
+ +       0.3069 * (normalized) meanjoy3
+ +      -0.1188 * (normalized) meansad3
+ +       0.0485 * (normalized) meansup3
+ +       0.2542 * (normalized) meantru3
+ +      -0.9192 * (normalized) meanpos3
+ +       0.2568 * (normalized) meanneg3
+ +      -0.0781 * (normalized) emomax12
+ +       0.3037 * (normalized) meanang12
+ +       0.0562 * (normalized) meanant12
+ +      -0.4992 * (normalized) meandis12
+ +       0.3146 * (normalized) meanfea12
+ +       0.3401 * (normalized) meanjoy12
+ +       0.6872 * (normalized) meansad12
+ +       0.5709 * (normalized) meansup12
+ +       0.291  * (normalized) meantru12
+ +       0.5442 * (normalized) meanpos12
+ +      -0.9497 * (normalized) meanneg12
+ +       0.3881 * (normalized) emomax13
+ +      -0.0244 * (normalized) meanang13
+ +      -0.1906 * (normalized) meanant13
+ +      -0.5845 * (normalized) meandis13
+ +       0.2327 * (normalized) meanfea13
+ +      -0.0454 * (normalized) meanjoy13
+ +       0.6819 * (normalized) meansad13
+ +       0.6785 * (normalized) meansup13
+ +       0.4847 * (normalized) meantru13
+ +      -0.7242 * (normalized) meanpos13
+ +      -0.1062 * (normalized) meanneg13
+ +       0.2127 * (normalized) emomax23
+ +       0.1102 * (normalized) meanang23
+ +       0.634  * (normalized) meanant23
+ +      -0.1901 * (normalized) meandis23
+ +       0.1456 * (normalized) meanfea23
+ +      -0.2722 * (normalized) meanjoy23
+ +       1.0251 * (normalized) meansad23
+ +       0.2606 * (normalized) meansup23
+ +       0.2169 * (normalized) meantru23
+ +      -0.1826 * (normalized) meanpos23
+ +       0.4151 * (normalized) meanneg23
+ +       0.4975
+
+Number of kernel evaluations: 1394 (94.965% cached)
+
+
+
+Time taken to build model: 0.06 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          40               66.6667 %
+Incorrectly Classified Instances        20               33.3333 %
+Kappa statistic                          0.3333
+Mean absolute error                      0.3333
+Root mean squared error                  0.5774
+Relative absolute error                 66.6667 %
+Root relative squared error            115.4701 %
+Total Number of Instances               60     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.633    0.300    0.679      0.633    0.655      0.334    0.667     0.613     0
+                 0.700    0.367    0.656      0.700    0.677      0.334    0.667     0.609     1
+Weighted Avg.    0.667    0.333    0.667      0.667    0.666      0.334    0.667     0.611     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 19 11 |  a = 0
+  9 21 |  b = 1
+
