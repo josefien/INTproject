@@ -1,0 +1,165 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Alpaydin}{2004}]{alpaydin2004introduction}
+Alpaydin, E.
+\newblock 2004.
+\newblock {\em Introduction to Machine Learning}.
+\newblock Adaptive computation and machine learning. MIT Press.
+
+\bibitem[\protect\citeauthoryear{Breiman}{2001}]{breiman2001random}
+Breiman, L.
+\newblock 2001.
+\newblock Random forests.
+\newblock {\em Machine learning} 45(1):5--32.
+
+\bibitem[\protect\citeauthoryear{{Carnegie Mellon
+  University}}{}]{carnegiemellonuniversity}
+{Carnegie Mellon University}.
+\newblock Grimm's fairy tales.
+\newblock \url{https://www.cs.cmu.edu/%7Espok/grimmtmp/}.
+
+\bibitem[\protect\citeauthoryear{dos Santos and Gatti}{2014}]{dos2014deep}
+dos Santos, C.~N., and Gatti, M.
+\newblock 2014.
+\newblock Deep convolutional neural networks for sentiment analysis of short
+  texts.
+\newblock In {\em COLING},  69--78.
+
+\bibitem[\protect\citeauthoryear{Elliott and Melchior}{1995}]{elliott}
+Elliott, C., and Melchior, E.
+\newblock 1995.
+\newblock Getting to the point: Emotion as a necessary and sufficient element
+  of story construction.
+\newblock In {\em Proceedings of the AAAI Spring Symposium on Interactive Story
+  Systems}.
+\newblock Citeseer.
+
+\bibitem[\protect\citeauthoryear{Garner}{1995}]{garner1995weka}
+Garner, S.~R.
+\newblock 1995.
+\newblock Weka: The waikato environment for knowledge analysis.
+\newblock In {\em Proceedings of the New Zealand computer science research
+  students conference},  57--64.
+\newblock Citeseer.
+
+\bibitem[\protect\citeauthoryear{Haykin}{2004}]{haykin2004comprehensive}
+Haykin, S.
+\newblock 2004.
+\newblock A comprehensive foundation.
+\newblock {\em Neural Networks} 2(2004).
+
+\bibitem[\protect\citeauthoryear{Hotho, N{\"u}rnberger, and
+  Paa{\ss}}{2005}]{hotho2005brief}
+Hotho, A.; N{\"u}rnberger, A.; and Paa{\ss}, G.
+\newblock 2005.
+\newblock A brief survey of text mining.
+\newblock In {\em Ldv Forum}, volume~20,  19--62.
+
+\bibitem[\protect\citeauthoryear{Keerthi \bgroup et al\mbox.\egroup
+  }{2001}]{Keerthi2001}
+Keerthi, S.; Shevade, S.; Bhattacharyya, C.; and Murthy, K.
+\newblock 2001.
+\newblock Improvements to platt's smo algorithm for svm classifier design.
+\newblock {\em Neural Computation} 13(3):637--649.
+
+\bibitem[\protect\citeauthoryear{Livingston}{2005}]{livingston2005implementation}
+Livingston, F.
+\newblock 2005.
+\newblock Implementation of breiman’s random forest machine learning
+  algorithm.
+\newblock {\em ECE591Q Machine Learning Journal Paper}.
+
+\bibitem[\protect\citeauthoryear{Mateas and Stern}{2003}]{Mateas}
+Mateas, M., and Stern, A.
+\newblock 2003.
+\newblock Fa\c{c}ade: An experiment in building a fully-realized interactive
+  drama.
+
+\bibitem[\protect\citeauthoryear{Mohammad and Turney}{2013}]{Mohammad}
+Mohammad, S.~M., and Turney, P.~D.
+\newblock 2013.
+\newblock Crowdsourcing a word-emotion association lexicon.
+\newblock 29(3):436--465.
+
+\bibitem[\protect\citeauthoryear{Pak and Paroubek}{2010}]{pak}
+Pak, A., and Paroubek, P.
+\newblock 2010.
+\newblock Twitter as a corpus for sentiment analysis and opinion mining.
+\newblock In {\em LREc}, volume~10,  1320--1326.
+
+\bibitem[\protect\citeauthoryear{Pang and Lee}{2004}]{pang2004sentimental}
+Pang, B., and Lee, L.
+\newblock 2004.
+\newblock A sentimental education: Sentiment analysis using subjectivity
+  summarization based on minimum cuts.
+\newblock In {\em Proceedings of the 42nd annual meeting on Association for
+  Computational Linguistics},  271.
+\newblock Association for Computational Linguistics.
+
+\bibitem[\protect\citeauthoryear{Platt}{1998}]{Platt1998}
+Platt, J.
+\newblock 1998.
+\newblock Fast training of support vector machines using sequential minimal
+  optimization.
+\newblock In Schoelkopf, B.; Burges, C.; and Smola, A., eds., {\em Advances in
+  Kernel Methods - Support Vector Learning}. MIT Press.
+
+\bibitem[\protect\citeauthoryear{Plutchik}{1980}]{plutchik1980emotion}
+Plutchik, R.
+\newblock 1980.
+\newblock {\em Emotion: A psychoevolutionary synthesis}.
+\newblock Harpercollins College Division.
+
+\bibitem[\protect\citeauthoryear{Riedl and Young}{2004}]{Riedl}
+Riedl, M.~O., and Young, R.~M.
+\newblock 2004.
+\newblock An intent-driven planner for multi-agent story generation.
+\newblock In {\em Proceedings of the Third International Joint Conference on
+  Autonomous Agents and Multiagent Systems - Volume 1}, AAMAS '04,  186--193.
+\newblock Washington, DC, USA: IEEE Computer Society.
+
+\bibitem[\protect\citeauthoryear{Rosenblatt}{1961}]{rosenblatt1961principles}
+Rosenblatt, F.
+\newblock 1961.
+\newblock Principles of neurodynamics. perceptrons and the theory of brain
+  mechanisms.
+\newblock Technical report, DTIC Document.
+
+\bibitem[\protect\citeauthoryear{Rowe \bgroup et al\mbox.\egroup
+  }{2009}]{rowe2009storyeval}
+Rowe, J.~P.; McQuiggan, S.~W.; Robison, J.~L.; Marcey, D.~R.; and Lester, J.~C.
+\newblock 2009.
+\newblock Storyeval: An empirical evaluation framework for narrative
+  generation.
+\newblock In {\em AAAI Spring Symposium: Intelligent Narrative Technologies
+  II},  103--110.
+
+\bibitem[\protect\citeauthoryear{Swartjes and Vromen}{2007}]{swartjes}
+Swartjes, I., and Vromen, J.
+\newblock 2007.
+\newblock Emergent story generation: Lessons from improvisational theater.
+\newblock In {\em Intelligent Narrative Technologies: Papers from the AAAI Fall
+  Symposium. Number FS-07-05 in AAAI Fall Symposium Series},  146--149.
+
+\bibitem[\protect\citeauthoryear{{University of Waikato}}{}]{SGD}
+{University of Waikato}.
+\newblock Class sgd.
+\newblock
+  \url{http://weka.sourceforge.net/doc.dev/weka/classifiers/functions/SGD.html}.
+
+\bibitem[\protect\citeauthoryear{Ware and Young}{2010}]{ware}
+Ware, S.~G., and Young, R.~M.
+\newblock 2010.
+\newblock Modeling narrative conflict to generate interesting stories.
+\newblock In {\em AIIDE}.
+
+\bibitem[\protect\citeauthoryear{Yu and Hatzivassiloglou}{2003}]{Yu2003}
+Yu, H., and Hatzivassiloglou, V.
+\newblock 2003.
+\newblock Towards answering opinion questions: Separating facts from opinions
+  and identifying the polarity of opinion sentences.
+\newblock In {\em Proceedings of the 2003 Conference on Empirical Methods in
+  Natural Language Processing}, EMNLP '03,  129--136.
+\newblock Stroudsburg, PA, USA: Association for Computational Linguistics.
+
+\end{thebibliography}

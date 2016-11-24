@@ -1,0 +1,313 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H 2
+Relation:     TCED-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    60
+Attributes:   85
+              emomax
+              emomin
+              meanang
+              meanant
+              meandis
+              meanfea
+              meanjoy
+              meansad
+              meansup
+              meantru
+              meanpos
+              meanneg
+              emomax1
+              emomin1
+              meanang1
+              meanant1
+              meandis1
+              meanfea1
+              meanjoy1
+              meansad1
+              meansup1
+              meantru1
+              meanpos1
+              meanneg1
+              emomax2
+              emomin2
+              meanang2
+              meanant2
+              meandis2
+              meanfea2
+              meanjoy2
+              meansad2
+              meansup2
+              meantru2
+              meanpos2
+              meanneg2
+              emomax3
+              emomin3
+              meanang3
+              meanant3
+              meandis3
+              meanfea3
+              meanjoy3
+              meansad3
+              meansup3
+              meantru3
+              meanpos3
+              meanneg3
+              emomax12
+              emomin12
+              meanang12
+              meanant12
+              meandis12
+              meanfea12
+              meanjoy12
+              meansad12
+              meansup12
+              meantru12
+              meanpos12
+              meanneg12
+              emomax13
+              emomin13
+              meanang13
+              meanant13
+              meandis13
+              meanfea13
+              meanjoy13
+              meansad13
+              meansup13
+              meantru13
+              meanpos13
+              meanneg13
+              emomax23
+              emomin23
+              meanang23
+              meanant23
+              meandis23
+              meanfea23
+              meanjoy23
+              meansad23
+              meansup23
+              meantru23
+              meanpos23
+              meanneg23
+              revised
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.0585967805078864
+    Node 2    -6.717144917475499
+    Node 3    6.457353658973258
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.0593585409187813
+    Node 2    6.718238549595495
+    Node 3    -6.456108931459073
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.2326501929465332
+    Attrib emomax    -1.555332225126256
+    Attrib emomin    0.016684934603420368
+    Attrib meanang    0.19414288009786046
+    Attrib meanant    -0.9150915715654669
+    Attrib meandis    -0.15183400400155836
+    Attrib meanfea    0.5105210304540244
+    Attrib meanjoy    0.6681295550266735
+    Attrib meansad    -1.5112075392120587
+    Attrib meansup    -0.6418292569030941
+    Attrib meantru    0.40894202860601775
+    Attrib meanpos    -0.3721112418922345
+    Attrib meanneg    -2.255111562410352
+    Attrib emomax1    1.2421154806306178
+    Attrib emomin1    -0.035625493582980464
+    Attrib meanang1    -0.4284804172203701
+    Attrib meanant1    1.3663492650227247
+    Attrib meandis1    0.9169683675120179
+    Attrib meanfea1    -0.3860787962111671
+    Attrib meanjoy1    1.6512473056362094
+    Attrib meansad1    0.008586645717765245
+    Attrib meansup1    -0.8866668361783263
+    Attrib meantru1    0.1310513161511787
+    Attrib meanpos1    -2.703625185352798
+    Attrib meanneg1    -1.9539081532455678
+    Attrib emomax2    0.7883253777677203
+    Attrib emomin2    -0.0305390009971664
+    Attrib meanang2    0.9250539876437066
+    Attrib meanant2    0.5803142559205735
+    Attrib meandis2    0.040336983779490014
+    Attrib meanfea2    0.1843321892360796
+    Attrib meanjoy2    1.3992363035096491
+    Attrib meansad2    0.6263380327411433
+    Attrib meansup2    -1.641378941524943
+    Attrib meantru2    -0.2972556978667614
+    Attrib meanpos2    -0.062328017426677394
+    Attrib meanneg2    0.20486877042977042
+    Attrib emomax3    -0.04771962828627831
+    Attrib emomin3    -0.0018413093163345481
+    Attrib meanang3    -0.021058548131685763
+    Attrib meanant3    -0.2814036541987507
+    Attrib meandis3    -1.2874218733866436
+    Attrib meanfea3    -0.32539958515627837
+    Attrib meanjoy3    1.2547635581897074
+    Attrib meansad3    -1.446113389868777
+    Attrib meansup3    -0.052275642782568965
+    Attrib meantru3    0.6108148061799535
+    Attrib meanpos3    -1.4390664673699782
+    Attrib meanneg3    -0.6061073144129346
+    Attrib emomax12    0.17705735692314725
+    Attrib emomin12    -0.019919659468773766
+    Attrib meanang12    1.6704628969012543
+    Attrib meanant12    -0.9450910120833483
+    Attrib meandis12    -0.7323752279956366
+    Attrib meanfea12    1.5669532454097703
+    Attrib meanjoy12    0.223874328797148
+    Attrib meansad12    1.533962248341083
+    Attrib meansup12    0.5998152642226009
+    Attrib meantru12    0.2516370594790008
+    Attrib meanpos12    0.6329516522767596
+    Attrib meanneg12    -2.5231997961378347
+    Attrib emomax13    0.6377102284972644
+    Attrib emomin13    -0.005295157151418553
+    Attrib meanang13    -0.8217881889205153
+    Attrib meanant13    -0.7742362866003829
+    Attrib meandis13    -1.2359080369160933
+    Attrib meanfea13    0.2779809973687398
+    Attrib meanjoy13    0.2371672008985543
+    Attrib meansad13    0.4474724844307598
+    Attrib meansup13    1.2317086456676845
+    Attrib meantru13    1.758703424313913
+    Attrib meanpos13    -2.1481296845449047
+    Attrib meanneg13    0.3308185656440363
+    Attrib emomax23    0.10507338860510973
+    Attrib emomin23    0.04464297337513683
+    Attrib meanang23    -1.2638451912787725
+    Attrib meanant23    0.8926782660980797
+    Attrib meandis23    -0.14354528055987262
+    Attrib meanfea23    0.7501805048012896
+    Attrib meanjoy23    -0.48722881924215944
+    Attrib meansad23    2.013400458782134
+    Attrib meansup23    -0.18169787352485542
+    Attrib meantru23    0.7037176619297767
+    Attrib meanpos23    0.3533201646120408
+    Attrib meanneg23    1.0619804148655734
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.1880666872638282
+    Attrib emomax    2.3322856433077215
+    Attrib emomin    0.018950398785502046
+    Attrib meanang    1.4417457004277818
+    Attrib meanant    0.9699534478211196
+    Attrib meandis    -0.4981571259523095
+    Attrib meanfea    -0.9039443722264062
+    Attrib meanjoy    -0.23736058712377892
+    Attrib meansad    -0.6352566150593848
+    Attrib meansup    0.48052518015947293
+    Attrib meantru    0.6436418019949601
+    Attrib meanpos    0.20417338833465348
+    Attrib meanneg    0.8158756056099673
+    Attrib emomax1    -0.400931099176099
+    Attrib emomin1    -0.030938315802372954
+    Attrib meanang1    0.9774630853268764
+    Attrib meanant1    -1.5178374972041042
+    Attrib meandis1    -0.38998288557736155
+    Attrib meanfea1    0.7989369867341737
+    Attrib meanjoy1    -1.2167895383357707
+    Attrib meansad1    -0.9179605789570247
+    Attrib meansup1    1.587695782888707
+    Attrib meantru1    -1.8593233747876508
+    Attrib meanpos1    3.500148458798225
+    Attrib meanneg1    1.3953181876756402
+    Attrib emomax2    -0.023633175151883252
+    Attrib emomin2    0.03201780630162036
+    Attrib meanang2    -0.5424011274575393
+    Attrib meanant2    -0.7309138804920129
+    Attrib meandis2    -0.04517103726853013
+    Attrib meanfea2    0.4369067093880071
+    Attrib meanjoy2    -0.5736466967987828
+    Attrib meansad2    -1.3940655264236477
+    Attrib meansup2    2.0564207709657434
+    Attrib meantru2    2.1247990957686014
+    Attrib meanpos2    0.5731575953075261
+    Attrib meanneg2    -0.42572703540760015
+    Attrib emomax3    1.3629517763014984
+    Attrib emomin3    0.0069903603032874795
+    Attrib meanang3    1.1829707965930005
+    Attrib meanant3    0.37733158807695066
+    Attrib meandis3    0.7503977699500977
+    Attrib meanfea3    0.12569493729765016
+    Attrib meanjoy3    -0.9274863632377354
+    Attrib meansad3    0.6510010355938172
+    Attrib meansup3    -0.16359512539035626
+    Attrib meantru3    0.0646683078694808
+    Attrib meanpos3    1.6263217728583175
+    Attrib meanneg3    0.3119596815652005
+    Attrib emomax12    -0.18214628191359344
+    Attrib emomin12    0.046996093900678076
+    Attrib meanang12    -1.170033219549363
+    Attrib meanant12    1.0875391354461064
+    Attrib meandis12    1.324890071475427
+    Attrib meanfea12    -1.6350496292957848
+    Attrib meanjoy12    -0.40969284254173266
+    Attrib meansad12    -1.325071763842145
+    Attrib meansup12    -0.24363988226520256
+    Attrib meantru12    -0.1492605439042067
+    Attrib meanpos12    -0.04692944376969235
+    Attrib meanneg12    2.4777319513613096
+    Attrib emomax13    -1.088019870453585
+    Attrib emomin13    -0.004822352084873048
+    Attrib meanang13    0.9736799781426992
+    Attrib meanant13    0.8644949228307529
+    Attrib meandis13    1.878521622545693
+    Attrib meanfea13    -0.5436642432917683
+    Attrib meanjoy13    -0.5481662211055552
+    Attrib meansad13    -1.1246786312596975
+    Attrib meansup13    -1.2443537638966216
+    Attrib meantru13    -1.4946380371896697
+    Attrib meanpos13    2.481575670330606
+    Attrib meanneg13    -0.30788323245069493
+    Attrib emomax23    -0.6477230573815526
+    Attrib emomin23    0.03800933221577464
+    Attrib meanang23    0.3459832572114501
+    Attrib meanant23    -2.750455017751418
+    Attrib meandis23    0.023756591496984933
+    Attrib meanfea23    -0.6720882346729321
+    Attrib meanjoy23    0.7692212229884269
+    Attrib meansad23    -2.6500987823453426
+    Attrib meansup23    0.22547388582020766
+    Attrib meantru23    -0.3344316994845429
+    Attrib meanpos23    0.6017735084922833
+    Attrib meanneg23    -0.7529482929767735
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 0.17 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          39               65      %
+Incorrectly Classified Instances        21               35      %
+Kappa statistic                          0.3   
+Mean absolute error                      0.3876
+Root mean squared error                  0.5766
+Relative absolute error                 77.5138 %
+Root relative squared error            115.315  %
+Total Number of Instances               60     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.667    0.367    0.645      0.667    0.656      0.300    0.652     0.650     0
+                 0.633    0.333    0.655      0.633    0.644      0.300    0.652     0.720     1
+Weighted Avg.    0.650    0.350    0.650      0.650    0.650      0.300    0.652     0.685     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 20 10 |  a = 0
+ 11 19 |  b = 1
